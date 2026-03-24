@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARoma 3D Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="tag">No More Boring Menus</p>
+        <h1>ARoma 3D Restaurant Menu</h1>
+        <p>
+          Scan a QR code and instantly open a 3D dish view on your phone. Rotate,
+          zoom, and inspect each dish before you order.
+        </p>
+      </div>
+      <a class="cta" href="#menu">Explore Dishes</a>
+    </header>
+
+    <main id="menu" class="menu-grid"></main>
+
+    <template id="dish-card-template">
+      <article class="dish-card">
+        <div>
+          <h2 class="dish-name"></h2>
+          <p class="dish-description"></p>
+          <p class="dish-price"></p>
+        </div>
+        <div class="qr-zone">
+          <div class="qr-code"></div>
+          <p class="scan-note">Scan for 3D View</p>
+          <a class="open-link" target="_blank" rel="noopener noreferrer">Open 3D Viewer</a>
+        </div>
+      </article>
+    </template>
+
+    <footer>
+      <p>Tip: Print this page and place it on your tables for instant QR ordering previews.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
